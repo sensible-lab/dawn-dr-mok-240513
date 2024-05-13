@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 {%- if section.settings.menu_type_desktop == 'mega' -%}
-  <link rel="stylesheet" href="{{ 'component-mega-menu-sl.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
 {%- if settings.cart_type == "drawer" -%}
@@ -193,7 +193,7 @@
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu-sl'
+          render 'header-mega-menu'
         endif
       endif
     %}
@@ -464,6 +464,7 @@
 {
   "name": "t:sections.header.name",
   "class": "section-header",
+  "max_blocks": 3,
   "settings": [
     {
       "type": "select",
@@ -647,22 +648,6 @@
   "blocks": [
     {
       "type": "@app"
-    },
-    {
-      "type": "mega_menu_extra",
-      "name": "Mega Menu Extra",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "featured_image",
-          "label": "Featured Image"
-        },
-        {
-          "type": "number",
-          "id": "link_index",
-          "label": "Link Index"
-        }
-      ]
     }
   ]
 }
