@@ -9,7 +9,7 @@
     width: unset;
   }
 
-  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .sl-subscription-box__banner-box.banner__box {
     background: white
   }
 }
