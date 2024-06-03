@@ -444,6 +444,14 @@
         }
       }
     },
+    "sl-subscription-box": {
+      "name": "Subscription Box",
+      "settings": {
+        "overlay_color": {
+          "label": "Overlay Color"
+        }
+      }
+    },
     "announcement-bar": {
       "name": "公告列",
       "blocks": {
