@@ -57,6 +57,10 @@
       "name": "Slider"
     }
   },
+  "subscription_box": {
+    "title": "Subscribe to our newsletter",
+    "description": "Get the latest news and updates from our store."
+  },
   "newsletter": {
     "label": "Email",
     "success": "Thanks for subscribing",

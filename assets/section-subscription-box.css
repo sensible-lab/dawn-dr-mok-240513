@@ -1,0 +1,23 @@
+.sl-subscription-box__banner-box {
+  padding: 4rem 20rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .sl-subscription-box__banner-box {
+    padding: 4rem 3rem;
+    width: unset;
+  }
+
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .sl-subscription-box__banner-box.banner__box {
+    background: white
+  }
+}
+
+.sl-subscription-box__field-wrapper {
+  margin: 0 auto;
+}
+
+.sl-subscription-box__submit {
+  margin-top: 16px;
+}

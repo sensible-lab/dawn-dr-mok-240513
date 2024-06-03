@@ -57,6 +57,10 @@
       "name": "投影播放器"
     }
   },
+  "subscription_box": {
+    "title": "訂閱我們",
+    "description": "訂閱我們能夠獲得最新優惠和產品消息。"
+  },
   "newsletter": {
     "label": "電子郵件",
     "success": "感謝您訂閱",
