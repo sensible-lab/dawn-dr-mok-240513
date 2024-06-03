@@ -444,6 +444,14 @@
         "info": "Standard-styled cards have no borders when an image shape is active."
       }
     },
+    "sl-subscription-box": {
+      "name": "Subscription Box",
+      "settings": {
+        "overlay_color": {
+          "label": "Overlay Color"
+        }
+      }
+    },
     "announcement-bar": {
       "name": "Announcement bar",
       "settings": {
