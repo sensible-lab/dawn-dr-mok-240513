@@ -1,1 +1,278 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"description":{"type":"description","settings":{}},"share":{"type":"share","settings":{"share_label":"Share"}}},"block_order":["vendor","title","price","variant_picker","quantity_selector","buy_buttons","description","share"],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-1","media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":true,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"rich_text_RBgP4W":{"type":"rich-text","blocks":{"heading_X7ma38":{"type":"heading","settings":{"heading":"Heptral 200mg","heading_size":"h1"}},"text_GPY9ag":{"type":"text","settings":{"text":"<p>Suitable for people concerned about fatty liver and liver health.<\/p>"}},"button_UQTeQf":{"type":"button","settings":{"button_label":"","button_link":"","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_X7ma38","text_GPY9ag","button_UQTeQf"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-1","full_width":true,"padding_top":40,"padding_bottom":52}},"multicolumn_agefHY":{"type":"multicolumn","blocks":{"column_kaiPXa":{"type":"column","settings":{"title":"促進排走脂肪肝","text":"","link_label":"","link":""}},"column_3JVmzN":{"type":"column","settings":{"title":"修復肝細胞","text":"","link_label":"","link":""}},"column_xkKz7Q":{"type":"column","settings":{"title":"激活肝細胞再生","text":"","link_label":"","link":""}},"column_Ppnk4N":{"type":"column","settings":{"title":"協助排走肝內毒素","text":"","link_label":"","link":""}}},"block_order":["column_kaiPXa","column_3JVmzN","column_xkKz7Q","column_Ppnk4N"],"settings":{"title":"產品賣點","heading_size":"h1","image_width":"third","image_ratio":"square","columns_desktop":4,"column_alignment":"center","background_style":"primary","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":20,"padding_bottom":36}},"collapsible_content_tAK9FF":{"type":"collapsible-content","blocks":{"collapsible_row_YNBwGi":{"type":"collapsible_row","settings":{"heading":"Effect","icon":"none","row_content":"<ul><li>Promote the reproduction of liver cells.<\/li><li>Improves liver detoxification.<\/li><li>Removes the excess bad cholesterol (LDL).<\/li><li>Restores liver cells and the normal function of the liver.<\/li><\/ul><p><\/p>","page":""}},"collapsible_row_RnnxPj":{"type":"collapsible_row","settings":{"heading":"Direction for use","icon":"none","row_content":"<p>Adults - Take 1-2 tablets daily or as directed by the healthcare professionals.<\/p>","page":""}}},"block_order":["collapsible_row_YNBwGi","collapsible_row_RnnxPj"],"settings":{"caption":"","heading":"常見問題","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"","container_color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"related-products":{"type":"related-products","settings":{"heading":"You may also like","heading_size":"h2","products_to_show":4,"columns_desktop":4,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","padding_top":36,"padding_bottom":28}}},"order":["main","rich_text_RBgP4W","multicolumn_agefHY","collapsible_content_tAK9FF","related-products"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_RBgP4W": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_X7ma38": {
+          "type": "heading",
+          "settings": {
+            "heading": "Heptral 200mg",
+            "heading_size": "h1"
+          }
+        },
+        "text_GPY9ag": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Suitable for people concerned about fatty liver and liver health.<\/p>"
+          }
+        },
+        "button_UQTeQf": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_X7ma38",
+        "text_GPY9ag",
+        "button_UQTeQf"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_agefHY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_kaiPXa": {
+          "type": "column",
+          "settings": {
+            "title": "促進排走脂肪肝",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3JVmzN": {
+          "type": "column",
+          "settings": {
+            "title": "修復肝細胞",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xkKz7Q": {
+          "type": "column",
+          "settings": {
+            "title": "激活肝細胞再生",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Ppnk4N": {
+          "type": "column",
+          "settings": {
+            "title": "協助排走肝內毒素",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_kaiPXa",
+        "column_3JVmzN",
+        "column_xkKz7Q",
+        "column_Ppnk4N"
+      ],
+      "settings": {
+        "title": "產品賣點",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 36
+      }
+    },
+    "product_tab_4DX9cy": {
+      "type": "product-tab",
+      "blocks": {
+        "tab_kKkyh9": {
+          "type": "tab",
+          "settings": {
+            "title": "藥物效能",
+            "description": "<p>Product Tab Description<\/p>"
+          }
+        },
+        "tab_TpfAaa": {
+          "type": "tab",
+          "settings": {
+            "title": "產品成份",
+            "description": "<p>Product Tab Description<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_kKkyh9",
+        "tab_TpfAaa"
+      ],
+      "settings": {
+      }
+    },
+    "collapsible_content_tAK9FF": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_YNBwGi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Effect",
+            "icon": "none",
+            "row_content": "<ul><li>Promote the reproduction of liver cells.<\/li><li>Improves liver detoxification.<\/li><li>Removes the excess bad cholesterol (LDL).<\/li><li>Restores liver cells and the normal function of the liver.<\/li><\/ul><p><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RnnxPj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Direction for use",
+            "icon": "none",
+            "row_content": "<p>Adults - Take 1-2 tablets daily or as directed by the healthcare professionals.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_YNBwGi",
+        "collapsible_row_RnnxPj"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "常見問題",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_RBgP4W",
+    "multicolumn_agefHY",
+    "product_tab_4DX9cy",
+    "collapsible_content_tAK9FF",
+    "related-products"
+  ]
+}
