@@ -1,0 +1,99 @@
+{{ 'product-tab.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'alpine.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign tabs = section.blocks | where: 'type', 'tab'
+%}
+
+<div class="page-width">
+  <div class="sl-tab-container" x-data="{ activeTab: 0 }">
+    <div class="sl-tab-headers">
+      {% for tab in tabs %}
+        <div
+          class="sl-tab-header"
+          @click="activeTab = {{ forloop.index0 }}"
+          :class="{ 'active': activeTab === {{ forloop.index0 }} }"
+        >
+          {{ tab.settings.title }}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="sl-tabs">
+      {% for tab in tabs %}
+        <div class="sl-tab" :class="{ 'active': activeTab === {{ forloop.index0 }} }">
+          {{ tab.settings.description }}
+        </div>
+      {% endfor %}
+      {% comment %}
+        <div class="sl-tab" :class="{ 'active': activeTab === 0 }">
+          <ul>
+            <li>– 促進肝細胞再生。</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝</li>
+          </ul>
+        </div>
+        <div class="sl-tab" :class="{ 'active': activeTab === 1 }">
+          <ul>
+            <li>– 促進肝細胞再生。2</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 2</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 2</li>
+          </ul>
+        </div>
+        <div class="sl-tab" :class="{ 'active': activeTab === 2 }">
+          <ul>
+            <li>– 促進肝細胞再生。3</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 3</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 3</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 3</li>
+          </ul>
+        </div>
+        <div class="sl-tab" :class="{ 'active': activeTab === 3 }">
+          <ul>
+            <li>– 促進肝細胞再生。4</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 4</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 4</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 4</li>
+            <li>– 加強肝臟排毒功能，促進排走脂肪肝 4</li>
+          </ul>
+        </div>
+      {% endcomment %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Tab",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Product Tab"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Product Tab Description</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Tab",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
