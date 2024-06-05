@@ -32,6 +32,13 @@
 -%}
 
 <div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
+  {% for f in card_collection.metafields.slm.product_filters.value %}
+    {{ f.system.id }}
+    <a href="/collections/all?filter.p.m.slm.product_filter_object=gid://shopify/Metaobject/{{ f.system.id }}">
+      {{ f.value }}
+      {{ f.system.id }}
+    </a>
+  {% endfor %}
   <div
     class="
       card
