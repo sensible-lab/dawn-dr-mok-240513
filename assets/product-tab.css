@@ -1,0 +1,31 @@
+.sl-tab-container {}
+
+.sl-tab-headers {
+  display: flex;
+  gap: 16px;
+  border-bottom: 10px solid #f6f6f6;
+}
+
+.sl-tab-header {
+  margin-bottom: -10px;
+  padding: 16px 0;
+  display: block;
+  cursor: pointer;
+}
+
+.sl-tab-header.active {
+  border-bottom: 10px solid #8bb0c0;
+}
+
+.sl-tab {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+}
+
+.sl-tab.active {
+  opacity: 1;
+  position: relative;
+}
