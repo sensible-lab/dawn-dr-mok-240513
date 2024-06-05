@@ -189,20 +189,36 @@
           "type": "tab",
           "settings": {
             "title": "藥物效能",
-            "description": "<p>Product Tab Description<\/p>"
+            "description": "{{ product.metafields.slm.effect | metafield_tag }}"
           }
         },
         "tab_TpfAaa": {
           "type": "tab",
           "settings": {
             "title": "產品成份",
-            "description": "<p>Product Tab Description<\/p>"
+            "description": "{{ product.metafields.slm.ingredients | metafield_tag }}"
+          }
+        },
+        "tab_UBbDTP": {
+          "type": "tab",
+          "settings": {
+            "title": "注意事項",
+            "description": "{{ product.metafields.slm.precaution | metafield_tag }}"
+          }
+        },
+        "tab_wnA8Kc": {
+          "type": "tab",
+          "settings": {
+            "title": "建議用法",
+            "description": "{{ product.metafields.slm.suggestion | metafield_tag }}"
           }
         }
       },
       "block_order": [
         "tab_kKkyh9",
-        "tab_TpfAaa"
+        "tab_TpfAaa",
+        "tab_UBbDTP",
+        "tab_wnA8Kc"
       ],
       "settings": {
       }
