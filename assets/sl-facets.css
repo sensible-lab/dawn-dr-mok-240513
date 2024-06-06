@@ -1,0 +1,10 @@
+span.sl-active-facets__button-inner {
+  color: white;
+  background: #8BB0C0;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.active-facets__button--light .sl-active-facets__button-inner {
+  box-shadow: none;
+}
