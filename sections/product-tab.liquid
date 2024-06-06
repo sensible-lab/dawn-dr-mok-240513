@@ -1,5 +1,4 @@
-{{ 'product-tab.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'alpine.js' | asset_url }}" defer="defer"></script>
+{{ 'sl-product-tab.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign tabs = section.blocks | where: 'type', 'tab'
