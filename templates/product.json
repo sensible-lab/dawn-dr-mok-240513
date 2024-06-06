@@ -185,6 +185,13 @@
     "product_tab_4DX9cy": {
       "type": "product-tab",
       "blocks": {
+        "tab_QNBrQb": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Tab",
+            "description": "<p>Product Tab Description<\/p>"
+          }
+        },
         "tab_kKkyh9": {
           "type": "tab",
           "settings": {
@@ -215,12 +222,12 @@
         }
       },
       "block_order": [
+        "tab_QNBrQb",
         "tab_kKkyh9",
         "tab_TpfAaa",
         "tab_UBbDTP",
         "tab_wnA8Kc"
       ],
-      "disabled": true,
       "settings": {
       }
     },
