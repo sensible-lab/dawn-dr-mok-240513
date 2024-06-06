@@ -1,1 +1,86 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{"title":"Collections","sort":"alphabetical","image_ratio":"square","columns_desktop":3,"columns_mobile":"2"}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "sl_collection_list_ppwUDP": {
+      "type": "sl-collection-list",
+      "blocks": {
+        "featured_collection_x4TEHC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "檢查",
+            "overlay_color": "#8cb0c0"
+          }
+        },
+        "featured_collection_BiPhit": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "個人護理",
+            "overlay_color": "#655a4d"
+          }
+        },
+        "featured_collection_RLgxrc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "醫學美容",
+            "overlay_color": "#333177"
+          }
+        },
+        "featured_collection_GdMtFb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "疫苗注射",
+            "overlay_color": "#333177"
+          }
+        },
+        "featured_collection_6eBgVq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "維他命補充劑",
+            "overlay_color": "#70270f"
+          }
+        },
+        "featured_collection_xLDanz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "藥物",
+            "overlay_color": "#655a4d"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_x4TEHC",
+        "featured_collection_BiPhit",
+        "featured_collection_RLgxrc",
+        "featured_collection_GdMtFb",
+        "featured_collection_6eBgVq",
+        "featured_collection_xLDanz"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sl_collection_list_ppwUDP"
+  ]
+}
