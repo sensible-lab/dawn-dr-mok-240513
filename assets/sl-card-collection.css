@@ -1,0 +1,54 @@
+.sl-card__content {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sl-card__content-inner {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sl-card__title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 8px 0;
+}
+
+.sl-card__chips {
+  display: none;
+}
+
+.sl-card__chip {
+  padding: 4px 20px;
+  border-radius: 999px;
+  border: .5px solid #FFF;
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.sl-card__chip:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 750px) {
+  .sl-card__title {
+    font-size: 2rem;
+  }
+
+  .sl-card__chips {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

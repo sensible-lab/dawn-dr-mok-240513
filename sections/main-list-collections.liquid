@@ -1,4 +1,5 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'sl-card-collection.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width">
@@ -36,7 +37,7 @@
             style="--animation-order: {{ forloop.index }};"
           {% endif %}
         >
-          {% render 'card-collection',
+          {% render 'sl-card-collection',
             card_collection: collection,
             media_aspect_ratio: section.settings.image_ratio,
             columns: 3
