@@ -31,7 +31,7 @@
   endif
 
   assign filters = card_collection.metafields.slm.product_filters.value
-  assign overlay_color = card_collection.metafields.slm.list_collection_overlay_color.value | default: '#000' | color_modify: 'alpha', 0.5
+  assign overlay_color_alpha = overlay_color | default: '#000' | color_modify: 'alpha', 0.5
 -%}
 
 <div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
@@ -85,7 +85,7 @@
       {%- endif -%}
       <div
         class="sl-card__content card__content"
-        style="background-color: {{ overlay_color }}"
+        style="background-color: {{ overlay_color_alpha }}"
         onclick="window.location.href='{{ card_collection.url }}'"
       >
         <div class="sl-card__content-inner">
