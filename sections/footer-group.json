@@ -5,6 +5,27 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "link_list_YPmJYN": {
+          "type": "link_list",
+          "settings": {
+            "heading": "產品資料",
+            "menu": "footer-menu-product"
+          }
+        },
+        "link_list_Eg7p6V": {
+          "type": "link_list",
+          "settings": {
+            "heading": "健康服務",
+            "menu": "footer-service"
+          }
+        },
+        "link_list_WbNzm9": {
+          "type": "link_list",
+          "settings": {
+            "heading": "網頁資訊",
+            "menu": "footer-website-structure"
+          }
+        },
         "subscription_box_WEGjNt": {
           "type": "subscription_box",
           "settings": {
@@ -27,36 +48,15 @@
             "heading": "PLAZA88",
             "subtext": "<h4>荃灣楊屋道88號PLAZA88 2樓19號舖<\/h4><h4>電話：2368 0123 \/ 6498 0123<\/h4>"
           }
-        },
-        "link_list_YPmJYN": {
-          "type": "link_list",
-          "settings": {
-            "heading": "產品資料",
-            "menu": "footer-menu-product"
-          }
-        },
-        "link_list_Eg7p6V": {
-          "type": "link_list",
-          "settings": {
-            "heading": "健康服務",
-            "menu": "footer-service"
-          }
-        },
-        "link_list_WbNzm9": {
-          "type": "link_list",
-          "settings": {
-            "heading": "網頁資訊",
-            "menu": "footer-website-structure"
-          }
         }
       },
       "block_order": [
-        "subscription_box_WEGjNt",
-        "text_i7gGAB",
-        "text_hPqe8k",
         "link_list_YPmJYN",
         "link_list_Eg7p6V",
-        "link_list_WbNzm9"
+        "link_list_WbNzm9",
+        "subscription_box_WEGjNt",
+        "text_i7gGAB",
+        "text_hPqe8k"
       ],
       "settings": {
         "color_scheme": "scheme-1",
