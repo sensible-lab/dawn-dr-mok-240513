@@ -1,1 +1,80 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"image_7tMiWj":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/123-logo-2023.jpg","image_width":220,"alignment":"center"}},"text_i7gGAB":{"type":"text","settings":{"heading":"安豐大廈","subtext":"<h4><\/h4><h4>荃灣圓墩圍65號安豐大廈地舖<\/h4><h4>電話：3702 0123 \/ 5544 8155<\/h4>"}},"text_hPqe8k":{"type":"text","settings":{"heading":"PLAZA88","subtext":"<h4>荃灣楊屋道88號PLAZA88 2樓19號舖<\/h4><h4>電話：2368 0123 \/ 6498 0123<\/h4>"}}},"block_order":["image_7tMiWj","text_i7gGAB","text_hPqe8k"],"settings":{"color_scheme":"scheme-1","newsletter_enable":true,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":false,"margin_top":0,"padding_top":36,"padding_bottom":36}}},"order":["footer"]}
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "subscription_box_WEGjNt": {
+          "type": "subscription_box",
+          "settings": {
+            "container_width": 85,
+            "image": "shopify:\/\/shop_images\/123-logo-2023.jpg",
+            "image_width": 260,
+            "alignment": "center"
+          }
+        },
+        "text_i7gGAB": {
+          "type": "text",
+          "settings": {
+            "heading": "安豐大廈",
+            "subtext": "<h4><\/h4><h4>荃灣圓墩圍65號安豐大廈地舖<\/h4><h4>電話：3702 0123 \/ 5544 8155<\/h4>"
+          }
+        },
+        "text_hPqe8k": {
+          "type": "text",
+          "settings": {
+            "heading": "PLAZA88",
+            "subtext": "<h4>荃灣楊屋道88號PLAZA88 2樓19號舖<\/h4><h4>電話：2368 0123 \/ 6498 0123<\/h4>"
+          }
+        },
+        "link_list_YPmJYN": {
+          "type": "link_list",
+          "settings": {
+            "heading": "產品資料",
+            "menu": "footer-menu-product"
+          }
+        },
+        "link_list_Eg7p6V": {
+          "type": "link_list",
+          "settings": {
+            "heading": "健康服務",
+            "menu": "footer-service"
+          }
+        },
+        "link_list_WbNzm9": {
+          "type": "link_list",
+          "settings": {
+            "heading": "網頁資訊",
+            "menu": "footer-website-structure"
+          }
+        }
+      },
+      "block_order": [
+        "subscription_box_WEGjNt",
+        "text_i7gGAB",
+        "text_hPqe8k",
+        "link_list_YPmJYN",
+        "link_list_Eg7p6V",
+        "link_list_WbNzm9"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
