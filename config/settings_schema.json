@@ -34,6 +34,21 @@
     ]
   },
   {
+    "name": "Powered by",
+    "settings": [
+      {
+        "type": "text",
+        "id": "powered_by_name",
+        "label": "Display Name"
+      },
+      {
+        "type": "url",
+        "id": "powered_by_url",
+        "label": "URL"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
