@@ -21,3 +21,35 @@
 .sl-subscription-box__submit {
   margin-top: 16px;
 }
+
+.sl-subscription-box-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sl-subscription-box-footer__container .sl-subscription-box-footer__submit {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+
+@media screen and (min-width: 750px) {
+  .sl-subscription-box__submit {
+    padding: 8px 32px;
+    min-width: unset;
+    min-height: unset;
+  }
+
+  .sl-subscription-box-footer__container {
+    display: block;
+  }
+
+  .sl-subscription-box-footer__container .sl-subscription-box-footer__submit {
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+}
