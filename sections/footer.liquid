@@ -4,6 +4,7 @@
 {{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+{{ 'sl-list-social.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .footer {
@@ -44,7 +45,8 @@
   -%}
   {%- if section.blocks.size > 0
     or section.settings.newsletter_enable
-    or section.settings.show_social and has_social_icons == true
+    or section.settings.show_social
+    and has_social_icons == true
     or section.settings.enable_follow_on_shop
   -%}
     {%- unless only_empty_brand -%}
@@ -100,6 +102,9 @@
                         {%- endfor -%}
                       </ul>
                     {%- endif -%}
+                  {%- when 'subscription_box' -%}
+                    {%- render 'subscription-box-footer', settings: block.settings -%}
+
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
                       {%- if settings.brand_image != blank -%}
@@ -159,7 +164,7 @@
         {%- endif -%}
 
         <div
-          class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          class="footer-block--newsletter {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
           {% endif %}
@@ -237,11 +242,10 @@
               {% # theme-check-enable %}
             </div>
           {%- endif -%}
-
-          {%- if section.settings.show_social and has_social_icons -%}
-            {%- render 'social-icons', class: 'footer__list-social' -%}
-          {%- endif -%}
         </div>
+        {%- if section.settings.show_social and has_social_icons -%}
+          {%- render 'sl-social-icons', class: ' sl-footer__list-social' -%}
+        {%- endif -%}
       </div>
     {%- endunless -%}
   {%- endif -%}
@@ -378,6 +382,57 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "subscription_box",
+      "name": "Subscription Box",
+      "settings": [
+        {
+          "type": "range",
+          "id": "container_width",
+          "min": 5,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "Container width",
+          "default": 100
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 50,
+          "max": 550,
+          "step": 5,
+          "unit": "px",
+          "label": "Image width",
+          "default": 100
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Image alignment on large screen",
+          "options": [
+            {
+              "value": "",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ]
     },
     {
       "type": "link_list",

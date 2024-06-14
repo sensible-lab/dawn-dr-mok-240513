@@ -1,0 +1,12 @@
+.sl-footer__list-social.list-social {
+  margin-top: 3.2rem;
+  justify-content: start;
+  gap: .8rem;
+}
+
+.sl-list-social__item a {
+  color: white;
+  padding: .8rem;
+  background-color: #8BB0C0;
+  border-radius: 9999px;
+}
