@@ -1,0 +1,25 @@
+.sl-list-menu__item--mobile-center {
+  justify-content: center;
+}
+
+.sl-list-menu__item--mobile-end {
+  justify-content: flex-end;
+}
+
+.sl-list-menu__item--mobile-start {
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 750px) {
+  .sl-list-menu__item--mobile-center {
+    justify-content: unset;
+  }
+
+  .sl-list-menu__item--mobile-end {
+    justify-content: unset;
+  }
+
+  .sl-list-menu__item--mobile-start {
+    justify-content: unset;
+  }
+}

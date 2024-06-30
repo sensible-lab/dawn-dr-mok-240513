@@ -5,6 +5,7 @@
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 {{ 'sl-list-social.css' | asset_url | stylesheet_tag }}
+{{ 'sl-list-menu.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .footer {
@@ -94,7 +95,7 @@
                           <li>
                             <a
                               href="{{ link.url }}"
-                              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %} sl-list-menu__item--mobile-{{ block.settings.mobile_text_alignment }}"
                             >
                               {{ link.title }}
                             </a>
@@ -342,7 +343,12 @@
           <div class="footer__payment">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
             <ul class="list list-payment" role="list">
-              {%- for type in shop.enabled_payment_types -%}
+              {% assign enabled_payment_types = 'visa, master,alipay_hk,alipay,wechatpay,fps,unionpay,payme'
+                | remove: ' '
+                | split: ','
+              %}
+              {% comment %} {%- for type in shop.enabled_payment_types -%} {% endcomment %}
+              {%- for type in enabled_payment_types -%}
                 <li class="list-payment__item">
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                 </li>
@@ -452,6 +458,26 @@
           "default": "footer",
           "label": "t:sections.footer.blocks.link_list.settings.menu.label",
           "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+        },
+        {
+          "type": "select",
+          "id": "mobile_text_alignment",
+          "options": [
+            {
+              "value": "start",
+              "label": "Start"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "end",
+              "label": "End"
+            }
+          ],
+          "default": "start",
+          "label": "Mobile text alignment"
         }
       ]
     },
