@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -9,21 +18,24 @@
           "type": "link_list",
           "settings": {
             "heading": "產品資料",
-            "menu": "footer-menu-product"
+            "menu": "footer-menu-product",
+            "mobile_text_alignment": "center"
           }
         },
         "link_list_Eg7p6V": {
           "type": "link_list",
           "settings": {
             "heading": "健康服務",
-            "menu": "footer-service"
+            "menu": "footer-service",
+            "mobile_text_alignment": "center"
           }
         },
         "link_list_WbNzm9": {
           "type": "link_list",
           "settings": {
             "heading": "網頁資訊",
-            "menu": "footer-website-structure"
+            "menu": "footer-website-structure",
+            "mobile_text_alignment": "center"
           }
         },
         "subscription_box_WEGjNt": {
