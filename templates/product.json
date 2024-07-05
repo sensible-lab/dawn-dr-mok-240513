@@ -96,12 +96,6 @@
             "heading_size": "h1"
           }
         },
-        "text_GPY9ag": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Suitable for people concerned about fatty liver and liver health.<\/p>"
-          }
-        },
         "button_UQTeQf": {
           "type": "button",
           "settings": {
@@ -116,7 +110,6 @@
       },
       "block_order": [
         "heading_X7ma38",
-        "text_GPY9ag",
         "button_UQTeQf"
       ],
       "settings": {
@@ -160,7 +153,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 20,
-        "padding_bottom": 36
+        "padding_bottom": 48
       }
     },
     "product_tab_4DX9cy": {
