@@ -77,46 +77,6 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_xgngGN": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_Qxd3QY": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "營養粉-品"
-          }
-        },
-        "featured_collection_GHegpz": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "保健產品"
-          }
-        },
-        "featured_collection_fkWTkf": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "美容系列"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_Qxd3QY",
-        "featured_collection_GHegpz",
-        "featured_collection_fkWTkf"
-      ],
-      "settings": {
-        "title": "產品分類",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "sl_collection_list_HePNHi": {
       "type": "sl-collection-list",
       "blocks": {
@@ -389,7 +349,6 @@
   "order": [
     "image_banner",
     "featured_collection_7dEtBq",
-    "collection_list_xgngGN",
     "sl_collection_list_HePNHi",
     "multirow_QAEq3A",
     "image_with_text_7iVmEy",
