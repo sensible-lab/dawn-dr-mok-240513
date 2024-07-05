@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -124,35 +133,10 @@
       "blocks": {
         "column_kaiPXa": {
           "type": "column",
+          "repeater": "{{ product.metafields.slm.product_selling_points.value }}",
           "settings": {
-            "title": "促進排走脂肪肝",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_3JVmzN": {
-          "type": "column",
-          "settings": {
-            "title": "修復肝細胞",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_xkKz7Q": {
-          "type": "column",
-          "settings": {
-            "title": "激活肝細胞再生",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_Ppnk4N": {
-          "type": "column",
-          "settings": {
-            "title": "協助排走肝內毒素",
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.heading.value }}",
             "text": "",
             "link_label": "",
             "link": ""
@@ -160,10 +144,7 @@
         }
       },
       "block_order": [
-        "column_kaiPXa",
-        "column_3JVmzN",
-        "column_xkKz7Q",
-        "column_Ppnk4N"
+        "column_kaiPXa"
       ],
       "settings": {
         "title": "產品賣點",
