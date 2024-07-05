@@ -92,7 +92,7 @@
         "heading_X7ma38": {
           "type": "heading",
           "settings": {
-            "heading": "Heptral 200mg",
+            "heading": "{{ product.title }}",
             "heading_size": "h1"
           }
         },
