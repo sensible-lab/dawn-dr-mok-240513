@@ -48,11 +48,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -67,7 +62,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "share"
       ],
       "settings": {
@@ -86,115 +80,34 @@
         "padding_bottom": 12
       }
     },
-    "rich_text_RBgP4W": {
+    "rich_text_ndQTxx": {
       "type": "rich-text",
       "blocks": {
-        "heading_X7ma38": {
+        "heading_YXmxUh": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.title }}",
+            "heading": "服務詳情",
             "heading_size": "h1"
           }
         },
-        "button_UQTeQf": {
-          "type": "button",
+        "text_ciVFbT": {
+          "type": "text",
           "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "{{ product.metafields.slm.effect | metafield_tag }}"
           }
         }
       },
       "block_order": [
-        "heading_X7ma38",
-        "button_UQTeQf"
+        "heading_YXmxUh",
+        "text_ciVFbT"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "multicolumn_agefHY": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_kaiPXa": {
-          "type": "column",
-          "repeater": "{{ product.metafields.slm.product_selling_points.value }}",
-          "settings": {
-            "image": "{{ block.repeater.image.value }}",
-            "title": "{{ block.repeater.heading.value }}",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_kaiPXa"
-      ],
-      "settings": {
-        "title": "產品賣點",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 20,
-        "padding_bottom": 48
-      }
-    },
-    "product_tab_4DX9cy": {
-      "type": "product-tab",
-      "blocks": {
-        "tab_kKkyh9": {
-          "type": "tab",
-          "settings": {
-            "title": "藥物效能",
-            "description": "{{ product.metafields.slm.effect | metafield_tag }}"
-          }
-        },
-        "tab_TpfAaa": {
-          "type": "tab",
-          "settings": {
-            "title": "產品成份",
-            "description": "{{ product.metafields.slm.ingredients | metafield_tag }}"
-          }
-        },
-        "tab_UBbDTP": {
-          "type": "tab",
-          "settings": {
-            "title": "注意事項",
-            "description": "{{ product.metafields.slm.precaution | metafield_tag }}"
-          }
-        },
-        "tab_wnA8Kc": {
-          "type": "tab",
-          "settings": {
-            "title": "建議用法",
-            "description": "{{ product.metafields.slm.suggestion | metafield_tag }}"
-          }
-        }
-      },
-      "block_order": [
-        "tab_kKkyh9",
-        "tab_TpfAaa",
-        "tab_UBbDTP",
-        "tab_wnA8Kc"
-      ],
-      "settings": {
       }
     },
     "collapsible_content_tAK9FF": {
@@ -259,9 +172,7 @@
   },
   "order": [
     "main",
-    "rich_text_RBgP4W",
-    "multicolumn_agefHY",
-    "product_tab_4DX9cy",
+    "rich_text_ndQTxx",
     "collapsible_content_tAK9FF",
     "related-products"
   ]
