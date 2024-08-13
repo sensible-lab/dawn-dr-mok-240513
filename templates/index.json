@@ -72,6 +72,11 @@
         "slide_pGHEyx",
         "slide_3exnhq"
       ],
+      "custom_css": [
+        ".slider-counter__link--active.slider-counter__link--dots .dot {background-color: #8bb0c0;}",
+        ".slider-counter__link--dots .dot {border-color: #8bb0c0;}",
+        ".slider-button {color: #8bb0c0;}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
