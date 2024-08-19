@@ -400,7 +400,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "立即預約",
-        "button_link": "",
+        "button_link": "https:\/\/123medhk.com\/outpatient-appointment\/?lang=zh-hant",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
