@@ -32,6 +32,7 @@
         },
         "link_list_WbNzm9": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "網頁資訊",
             "menu": "footer-website-structure",
