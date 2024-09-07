@@ -3062,6 +3062,9 @@
             "link": {
               "label": "Button link"
             },
+            "slide_link": {
+              "label": "Slide link"
+            },
             "secondary_style": {
               "label": "Use outline button style"
             },
