@@ -76,7 +76,8 @@
         ".slider-counter__link--active.slider-counter__link--dots .dot {background-color: #8bb0c0;}",
         ".slider-counter__link--dots .dot {border-color: #8bb0c0;}",
         ".slider-button {color: #8bb0c0;}",
-        ".slideshow__controls {border: none}"
+        ".slideshow__controls {border: none;}",
+        ".slideshow__autoplay {display: none;}"
       ],
       "settings": {
         "layout": "grid",
