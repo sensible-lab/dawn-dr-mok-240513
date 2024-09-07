@@ -78,7 +78,7 @@
         ".slider-button {color: #8bb0c0;}"
       ],
       "settings": {
-        "layout": "full_bleed",
+        "layout": "grid",
         "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
