@@ -275,6 +275,13 @@
       >
     {%- endif -%}
 
+    <link
+      href="{{ 'component-whatsapp.css' | asset_url }}"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    >
+
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
@@ -349,6 +356,26 @@
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {%- liquid
+      if (request.page_type == 'product')
+        assign product_full_url = request.origin | append: product.url
+        assign whatsapp_message = settings.whatsapp_product_message | replace: '[product_title]', product.title | replace: '[product_url]', product_full_url
+      else
+        assign whatsapp_message = settings.whatsapp_general_message
+      endif
+    -%}
+
+    {%- if settings.whatsapp_phone_number != blank -%}
+      <div class="whatsapp-position-wrapper">
+        <a
+          href="https://api.whatsapp.com/send?phone={{ settings.whatsapp_phone_number }}&text={{ whatsapp_message }}"
+          class="whatsapp-button"
+        >
+          <img src="{{ 'whatsapp.svg' | asset_url }}" alt="WhatsApp" width="25" height="25">
+        </a>
+      </div>
     {%- endif -%}
   </body>
 </html>
