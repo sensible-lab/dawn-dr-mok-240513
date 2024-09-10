@@ -49,6 +49,26 @@
     ]
   },
   {
+    "name": "WhatsApp",
+    "settings": [
+      {
+        "type": "text",
+        "id": "whatsapp_phone_number",
+        "label": "WhatsApp Phone Number"
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_general_message",
+        "label": "WhatsApp General Message"
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_product_message",
+        "label": "WhatsApp Product Message"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
