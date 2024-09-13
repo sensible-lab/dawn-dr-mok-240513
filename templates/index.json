@@ -185,18 +185,26 @@
             "collection": "醫學美容",
             "overlay_color": "#333177"
           }
+        },
+        "featured_collection_gaGDhc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "疫苗注射",
+            "overlay_color": "#242833"
+          }
         }
       },
       "block_order": [
         "featured_collection_bigR7M",
         "featured_collection_gNVpRk",
-        "featured_collection_x3zk76"
+        "featured_collection_x3zk76",
+        "featured_collection_gaGDhc"
       ],
       "settings": {
         "title": "健康服務及產品",
         "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
